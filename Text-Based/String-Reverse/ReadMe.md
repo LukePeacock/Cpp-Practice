@@ -9,7 +9,7 @@ Your input string was: "hello"
 ```
 
 
-Program is called by: `./String-Reverse <string>` where `<string>` is the user input string. For multiple word phrases, please place the input string in quotation marks e.g. 
+Program is called by: `./string_reverse <string>` where `<string>` is the user input string. For multiple word phrases, please place the input string in quotation marks e.g. 
 
 ```
 ./string_reverse "hello hello"

@@ -1,7 +1,7 @@
 //
-//  Pig-Latin.cpp
+//  vowel_counter.cpp
 //  
-//	This program will take a user input string and produce a Pig-Latin variant.
+//	This program will take a user input string and count the number of vowels
 //
 //  Created by Luke Peacock on 24/11/2019.
 //  Copyright © 2019 Luke Peacock. All rights reserved.
@@ -35,7 +35,7 @@ int VowelCount(std::string str) {
 
 
 /*
- * Main Function. Takes an input string and pig-latinizes it
+ * Main Function. Takes an input string and counts the number of vowels
  *
  * @param: argv[0] Program Name
  * @param: argv[1] Input String or phrase
@@ -52,14 +52,14 @@ int main(int argc, char **argv) {
 		int vowel_count = 0;	//create output variable
 		std::string word; 	// Create variable for loop assignment
 
-		while(iss >> word)	// While there are words left, translate them
+		while(iss >> word)	// While there are words left, count vowels in word
 		{
      		vowel_count += VowelCount(word);
 		}
 	
 		//output
 		std::cout << "\nYour input string was: \"" << argv[1] << "\"";
-		std::cout << "\nThere are: " << vowel_count << " vowels in this string" << std::endl;
+		std::cout << "\nThere are " << vowel_count << " vowels in this string" << std::endl;
 	}
 	else 
 		std::cout << "Too Many Parameters, Please Supply a String or Phrase To Count The Number of Vowels";

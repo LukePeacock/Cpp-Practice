@@ -7,6 +7,9 @@ Files are split into categories and can be run individually. The repo current co
 - [Text Based](text-based) Programs
 	- [String Reverse](text-based/string-reverse)
 	- [Pig Latin Translator](text-based/pig-latin)
+	- [Vowel Counter](text-based/vowel-count)
+	- [Word Counter](text-based/word-count)
+	- [Palindrome Checker](text-based/palindrome-check)
 
 
 

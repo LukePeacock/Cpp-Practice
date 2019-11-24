@@ -1,6 +1,6 @@
 # Palindrome Checker
 
-This program takes an input string or phrase and tells the user if it is a palindrome
+This program takes an input string or phrase and tells the user if it is a palindrome, e.g.
 
 ```
 ./palindrome_checker hello

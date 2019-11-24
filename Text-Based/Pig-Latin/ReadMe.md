@@ -4,6 +4,7 @@ This program takes an input string or phrase and translates it to Pig Latin, e.g
 
 ```
 ./pig_latin pig
+
 Your input string was: "pig"
 In Pig-Latin this is: "igpay"
 ```
@@ -20,6 +21,7 @@ To use standard transation you use
 For example:
 ```
 ./pig_latin every
+
 Your input string was: "every"
 In Pig-Latin this is: "everyway"
 ```
@@ -32,6 +34,17 @@ For alternative translations use:
 For example:
 ```
 ./pig_latin every -alt
+
 Your input string was: "every"
 In Pig-Latin this is: "eryevay"
+```
+
+
+
+The program also works for phrases e.g.
+```
+./pig_latin "hello hello"
+
+Your input string was: "hello hello"
+In Pig-Latin this is: "ellohay ellohay"
 ```

@@ -22,7 +22,7 @@ Your input string was: "hello"
 
 ### Pig-Latin Translator
 
-This program ([found here](pig-latin)) takes an input string or phrase and translates it to Pig Latin e.g. 
+This program ([found here](Pig-Latin)) takes an input string or phrase and translates it to Pig Latin e.g. 
 
 ```
 ./pig_latin pig
@@ -33,7 +33,7 @@ In Pig-Latin this is: "igpay"
 
 ### Vowel Counter
 
-This program ([found here](vowel-count)) takes an input string or phrase and count the number of vowels, e.g.
+This program ([found here](Vowel-Count)) takes an input string or phrase and count the number of vowels, e.g.
 
 ```
 ./vowel_counter hello
@@ -54,7 +54,7 @@ There is 1 word in this string
 ```
 
 ### Palindrome Checker 
-This program ([found here](palindrome-check)) takes an input string or phrase and tells the user if it is a palindrome, e.g. 
+This program ([found here](Palindrome-check)) takes an input string or phrase and tells the user if it is a palindrome, e.g. 
 ```
  ./palindrome_check "A man, a plan, a canal, Panama!"
 

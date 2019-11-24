@@ -9,7 +9,7 @@
 
 #include <iostream>
 
-std::string reverseStr(std::string inputString);
+std::string reverseStr(std::string input_string);
 
 /*
  * Main Function. Takes an input string and reverses it
@@ -25,12 +25,12 @@ int main(int argc, char **argv) {
 		std::cout << "\nMissing One or More Parameters, Please Supply a String To Reverse" << std::endl;
 	if (argc == 2)
 	{
-		std::string inputString = argv[1];
+		std::string input_string = argv[1];
 		// Reverse String
-		std::string outputString = reverseStr(inputString);
+		std::string output_string = reverseStr(input_string);
 			
-		std::cout << "Your input string was: \"" << inputString << "\"";
-		std::cout << "\n\"" << inputString << "\" reversed is: \"" << outputString << "\"" << std::endl;
+		std::cout << "Your input string was: \"" << input_string << "\"";
+		std::cout << "\n\"" << input_string << "\" reversed is: \"" << output_string << "\"" << std::endl;
 	}
 }
 
@@ -39,8 +39,8 @@ int main(int argc, char **argv) {
  *
  * @param: inputString: the string to be reversed; 
  */
-std::string reverseStr(std::string inputString) {		
-	reverse(inputString.begin(), inputString.end());
-	return inputString;
+std::string reverseStr(std::string input_string) {		
+	reverse(input_string.begin(), input_string.end());
+	return input_string;
 }
 

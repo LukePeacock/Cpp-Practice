@@ -59,7 +59,8 @@ int main(int argc, char **argv) {
 	
 		//output
 		std::cout << "\nYour input string was: \"" << argv[1] << "\"";
-		std::cout << "\nThere are " << vowel_count << " vowels in this string" << std::endl;
+		std::cout << "\nThere " << ((vowel_count == 1)? "is " : "are " )<< vowel_count;
+		std::cout << ((vowel_count == 1)? " vowel" : " vowels") << " in this string" << std::endl;
 	}
 	else 
 		std::cout << "Too Many Parameters, Please Supply a String or Phrase To Count The Number of Vowels";

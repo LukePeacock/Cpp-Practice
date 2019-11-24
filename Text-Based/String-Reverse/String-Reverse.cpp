@@ -11,7 +11,7 @@
 
 std::string reverseStr(std::string inputString);
 
-/**
+/*
  * Main Function. Takes an input string and reverses it
  *
  * @param: argv[0] Program Name
@@ -23,8 +23,6 @@ int main(int argc, char **argv) {
 	//Output errors for incorrect number of parameters
 	if (argc < 2) 
 		std::cout << "\nMissing One or More Parameters, Please Supply a String To Reverse" << std::endl;
-	// if (argc > 3)
-	// 	std::cout << "\nToo Many Arguments! Please Supply 2 Sets of Coordiantes e.g. 'x,y,z' 'x,y,z'" << std::endl;
 	if (argc == 2)
 	{
 		std::string inputString = argv[1];
@@ -36,7 +34,9 @@ int main(int argc, char **argv) {
 	}
 }
 
-/*
+/* 
+ * Reverse the input string
+ *
  * @param: inputString: the string to be reversed; 
  */
 std::string reverseStr(std::string inputString) {		

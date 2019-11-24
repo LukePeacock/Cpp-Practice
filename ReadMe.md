@@ -4,12 +4,12 @@ This repository contains many different C++ programs used for practicing C++. Th
 
 Files are split into categories and can be run individually. The repo current contains:
 
-- [Text Based](text-based) Programs
-	- [String Reverse](text-based/string-reverse)
-	- [Pig Latin Translator](text-based/pig-latin)
-	- [Vowel Counter](text-based/vowel-count)
-	- [Word Counter](text-based/word-count)
-	- [Palindrome Checker](text-based/palindrome-check)
+- [Text Based](Text-Based) Programs
+	- [String Reverse](Text-Based/String-Reverse)
+	- [Pig Latin Translator](Text-Based/Pig-Latin)
+	- [Vowel Counter](Text-Based/vowel-count)
+	- [Word Counter](Text-Based/word-count)
+	- [Palindrome Checker](Text-Based/palindrome-check)
 
 
 

@@ -19,9 +19,10 @@ bool is_vowel(char c)
 
 
 /* 
- * Reverse the input string
+ * Translate word to pig latin.
  *
- * @param: inputString: the string to be reversed; 
+ * @param: str: string to be translate 
+ * @param: alt: boolean, sets alternative translation on or off
  */
 std::string PigLatinWord(std::string str, bool alt) {
 	// If word begins with vowel and default translation, append 'way' to end and return

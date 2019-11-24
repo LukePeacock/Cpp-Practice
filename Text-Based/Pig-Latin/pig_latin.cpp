@@ -8,7 +8,7 @@
 //
 
 #include <iostream>
-
+#include <sstream>
 
 // checks if the character 'c' is a vowel and returns either true of false
 bool is_vowel(char c) 
@@ -25,13 +25,11 @@ bool is_vowel(char c)
  */
 std::string PigLatinWord(std::string str, bool alt) {
 	// If word begins with vowel and default translation, append 'way' to end and return
-	std::cout << alt;
 	if (is_vowel(str[0]) && !alt)
 		return str.append("way");
 	// If word begins with vowel and alternate translation, append vowel, and consanant group to end plus 'ay' and return
 	else if (is_vowel(str[0]) && alt)
 	{
-		std::cout << "\nvowel alt";
 		str += str[0];		// Move first vowel to end of string;
 		str.erase(0,1);
 		std::string output_string = str;	// create output string
@@ -50,7 +48,6 @@ std::string PigLatinWord(std::string str, bool alt) {
 	}
 	else // Else append consonant and 'ay' to end and return
 	{
-		std::cout << "\nconsonant";
 		str += str[0];
 		str.erase(0,1);
 		str.append("ay");
@@ -74,23 +71,34 @@ int main(int argc, char **argv) {
 	//Output errors for incorrect number of parameters
 	if (argc < 2) 
 		std::cout << "Missing One or More Parameters, Please Supply a String or Phrase To Translate To Pig Latin";
-	if (argc >= 2)
+	else if (argc == 2  || argc == 3)
 	{
-		std::string input_string = argv[1];
-		std::string output_string = "";
-		// while(std::cin >> inputString)
-		// {
-     		// DO STUFF.
-			if (argc == 3)
-				if (strcmp(argv[2], "-alt") == 0)
-					output_string += PigLatinWord(input_string, true);
-				else 
-					std::cout << "Parameter not recognised. Please use '-alt' to specify alternate translation";
-     		else 
-     			output_string += PigLatinWord(input_string, false);
-		//}
-			
-		std::cout << "\nYour input string was: \"" << input_string << "\"";
+		bool alt = false;
+		if (argc ==3) 
+		{ 
+			if (strcmp(argv[2], "-alt") == 0)
+				alt = true;
+			else 
+			{	
+				std::cout << "Parameter not recognised. Please use '-alt' to specify alternate translation\n";
+				exit(0);
+			}
+		}
+		std::stringstream iss((std::string)argv[1]);	//create stringstream for input string
+		std::string output_string = "";	//create output variable
+		std::string word; 	// Create variable for loop assignment
+
+		while(iss >> word)	// While there are words left, translate them
+		{
+     		output_string += PigLatinWord(word, alt) +" " ;
+		}
+		
+		output_string.erase(output_string.size()-1, 1); 	// remove final whitespace
+
+		//output
+		std::cout << "\nYour input string was: \"" << argv[1] << "\"";
 		std::cout << "\nIn Pig-Latin this is: \"" << output_string << "\"" << std::endl;
 	}
+	else 
+		std::cout << "Too Many Parameters, Please Supply a String or Phrase To Translate To Pig Latin";
 }
